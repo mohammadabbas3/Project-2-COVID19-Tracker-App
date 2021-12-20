@@ -28,4 +28,4 @@ jobs:
         run: npm install -g surge
         
       - name: Run surge
-        run: surge ./ COVID-19 TrackerApp.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ COVID-19_TrackerApp.surge.sh --token ${{secrets.SURGE_TOKEN}}
