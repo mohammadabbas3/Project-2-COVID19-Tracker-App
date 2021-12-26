@@ -5,8 +5,6 @@ name: React App Deploy to Surge
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -31,7 +29,7 @@ jobs:
         cmd: install # will run `yarn install` command
         
     - name: Build React App
-      run: sudo yarn build
+      run: yarn build
 
     - name: Install Surge
       run: npm install --global surge
