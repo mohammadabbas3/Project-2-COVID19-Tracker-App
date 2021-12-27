@@ -30,4 +30,4 @@ jobs:
 
       # Deploy to the defined URL using the token
       - name: Deploy to surge
-        run: surge ./build covid-19-trackerapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build project-covid-19-trackerapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
